@@ -1,0 +1,121 @@
+/* Layout */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6f9;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+  width: 250px;
+  background: linear-gradient(180deg, #1e3a8a, #0f172a);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  margin: 0;
+  font-weight: 600;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.sidebar h3 {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.menu li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 14px;
+}
+
+.menu li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.menu li.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Logout button */
+.logout {
+  margin-top: auto;
+  background: rgba(255, 0, 0, 0.15);
+}
+
+.logout:hover {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+/* ================= MAIN AREA ================= */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* horizontal center */
+  justify-content: center;
+}
+
+/* Top Bar */
+.topbar {
+  height: 90px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+}
+
+.topbar h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Content Area */
+.content {
+  padding: 30px;
+  flex: 1;
+}
+
+/* Card Style (for inner pages like upload form) */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .menu li {
+    font-size: 13px;
+  }
+}

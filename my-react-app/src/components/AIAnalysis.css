@@ -1,0 +1,77 @@
+/* ================= AI ANALYSIS PAGE ================= */
+
+.analysis-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #b1cde9, #b1cde9);
+  color: #111827; /* FORCE DARK TEXT */
+}
+
+/* Heading */
+.analysis-page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111827;  /* Dark heading */
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Table Container */
+.analysis-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  color: #1f2937; /* Force table text dark */
+}
+
+/* Table Header */
+.analysis-table thead {
+  background: #1f2937;
+  color: #ffffff;
+}
+
+.analysis-table th,
+.analysis-table td {
+  padding: 14px;
+  text-align: left;
+}
+
+/* Hover Effect */
+.analysis-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* ================= RISK COLORS ================= */
+
+.safe {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.medium {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.high {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Back Button */
+.analysis-page button {
+  margin-top: 20px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #1e56aa;
+  background: #ffffff;
+  cursor: pointer;
+  color: #111827;
+}
+
+.analysis-page button:hover {
+  background: #f3f4f6;
+}

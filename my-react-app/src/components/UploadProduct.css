@@ -1,0 +1,120 @@
+.upload-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb, #f1f5f9);
+  padding: 40px;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading */
+.upload-page h2 {
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+  color: rgb(35, 52, 105);
+}
+
+/* Form Card */
+.form-card {
+  background: rgb(17, 15, 81);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+  animation: slideUp 0.7s ease;
+  transition: transform 0.3s ease;
+}
+
+.form-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Labels */
+.form-card label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Inputs */
+.form-card input,
+.form-card textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+/* Soft focus — no blue */
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #cbd5e1;
+  box-shadow: 0 0 0 2px rgba(203, 213, 225, 0.3);
+}
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 8px rgba(26,115,232,0.2);
+  outline: none;
+}
+
+/* Buttons */
+.form-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #96c4ff;
+  color: rgb(3, 3, 3);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-card button:hover {
+  background: #ffffff;
+  transform: scale(1.02);
+}
+
+/* Back Button */
+.back-btn {
+  background: #777;
+}
+
+.back-btn:hover {
+  background: #555;
+}
+
+/* Background Animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Entry Animations */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
