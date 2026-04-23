@@ -10,13 +10,39 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = () => {
+   const handleLogin = async () => {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          email: email,
+          password: password
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("Login successful");
+        localStorage.setItem("userId", data.user_id);
+        navigate("/dashboard");
+      } else {
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Server not responding");
+    }
+  };
+const handleRegister = () => {
 
     // Add API call here
 
-    navigate("/dashboard");
+    navigate("/register");
   };
-
   return (
 
     <div className="login-container">
@@ -48,6 +74,13 @@ export default function Login() {
           onClick={handleLogin}
         >
           LOGIN
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={handleRegister}
+        >
+          Register
         </motion.button>
 
       </motion.div>

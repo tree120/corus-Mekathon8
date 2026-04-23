@@ -74,8 +74,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;   /* horizontal center */
-  justify-content: center;
+  /*align-items: center;    horizontal center 
+  justify-content: center;*/
 }
 
 /* Top Bar */
@@ -96,8 +96,11 @@
 
 /* Content Area */
 .content {
-  padding: 30px;
+  /*padding: 30px;
+  flex: 1;*/
   flex: 1;
+  width: 100%;
+  padding: 0;
 }
 
 /* Card Style (for inner pages like upload form) */

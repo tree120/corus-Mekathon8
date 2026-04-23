@@ -1,0 +1,96 @@
+.profilePage {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #eaf4ff, #dbeafe);
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Main container */
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  padding: 40px;
+  gap: 40px;
+}
+
+/* LEFT */
+.leftSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSection img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #2563eb;
+}
+
+/* RIGHT */
+.rightSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightSection h1 {
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.infoBlock {
+  margin-bottom: 20px;
+}
+
+.infoBlock h3 {
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.infoBlock p {
+  color: #334155;
+}
+
+/* Certifications */
+.certs span {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* Edit Button */
+.editBtn {
+  margin-top: 20px;
+  width: 200px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.editBtn:hover {
+  background: #1d4ed8;
+}

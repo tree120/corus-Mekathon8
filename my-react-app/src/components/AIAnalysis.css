@@ -1,22 +1,22 @@
 /* ================= AI ANALYSIS PAGE ================= */
-
+/*
 .analysis-page {
   min-height: 100vh;
   padding: 40px;
   background: linear-gradient(135deg, #b1cde9, #b1cde9);
-  color: #111827; /* FORCE DARK TEXT */
+  color: #111827;
 }
 
-/* Heading */
+
 .analysis-page h2 {
   text-align: center;
   margin-bottom: 30px;
-  color: #111827;  /* Dark heading */
+  color: #111827; 
   font-size: 28px;
   font-weight: 600;
 }
 
-/* Table Container */
+
 .analysis-table {
   width: 100%;
   border-collapse: collapse;
@@ -24,10 +24,10 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  color: #1f2937; /* Force table text dark */
+  color: #1f2937;
 }
 
-/* Table Header */
+
 .analysis-table thead {
   background: #1f2937;
   color: #ffffff;
@@ -39,12 +39,12 @@
   text-align: left;
 }
 
-/* Hover Effect */
+
 .analysis-table tbody tr:hover {
   background: #f1f5f9;
 }
 
-/* ================= RISK COLORS ================= */
+
 
 .safe {
   color: #16a34a;
@@ -60,18 +60,74 @@
   color: #dc2626;
   font-weight: 600;
 }
+*/
 
-/* Back Button */
-.analysis-page button {
-  margin-top: 20px;
-  padding: 8px 14px;
-  border-radius: 6px;
-  border: 1px solid #1e56aa;
-  background: #ffffff;
-  cursor: pointer;
-  color: #111827;
+
+
+.analysisPage {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #eef5ff, #dbeafe);
+  font-family: 'Inter', sans-serif;
 }
 
-.analysis-page button:hover {
-  background: #f3f4f6;
+.mainTitle {
+  text-align: center;
+  font-size: 32px;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+}
+
+/* Section */
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+/* Grid */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.infoCard {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+}
+
+.infoCard h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.infoCard p {
+  color: #475569;
+}
+.back-btn {
+  margin-top: 20px;
+  width: 200px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #1d4ed8;
 }

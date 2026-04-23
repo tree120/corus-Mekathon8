@@ -1,0 +1,69 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+.editPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef5ff, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Outfit', sans-serif;
+}
+
+.editPage h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 500px;
+}
+
+.editForm input,
+.editForm textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #dbeafe;
+  background: #f8fbff;
+  transition: 0.2s;
+  color: #1e293b;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+
+
+.btnGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btnGroup button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btnGroup button[type="submit"] {
+  background: #2563eb;
+  color: white;
+}
+
+.btnGroup button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.btnGroup button[type="button"] {
+  background: #e5e7eb;
+}
